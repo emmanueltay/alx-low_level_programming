@@ -7,24 +7,24 @@
 
 int main(void)
 {
-	int hundreds_position = '0';
+	int _100 = '0';
 
-	int tens_position = '0';
+	int _10 = '0';
 
-	int ones_position = '0';
+	int _1 = '0';
 
-	for (hundreds_position = '0'; hundreds_position <= '9'; hundreds_position++)
+	for (_100 = '0'; _100 <= '9'; _100++)
 	{
-		for (tens_position = '0'; tens_position <= '9'; tens_position++)
+		for (_10 = '0'; _10 <= '9'; _10++)
 		{
-			for (ones_position = '0'; ones_position <= '9'; ones_position++)
+			for (_1 = '0'; _1 <= '9'; _1++)
 			{
-				if (!((ones_position == tens_position) || (tens_position == hundreds_position) || (tens_position > ones_position) || (hundreds_position > tens_position)))
+				if (!((_1 == _10) || (_10 == _100) || (_10 > _1) || (_100 > _10)))
 				{
-					putchar(hundreds_position);
-					putchar(tens_position);
-					putchar(ones_position);
-					if (!(ones_position == '9' && tens_position == '8' && hundreds_position == '7'))
+					putchar(_100);
+					putchar(_10);
+					putchar(_1);
+					if (!(_1 == '9' && _10 == '8' && _100 == '7'))
 					{
 						putchar(',');
 						putchar(' ');
