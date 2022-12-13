@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - prints alphabets in lower case
  *
  * Return: Always 0 (Success)
  */
@@ -12,8 +12,8 @@ void print_alphabet(void)
 
 	while (x <= 'z')
 	{
-		putchar(x);
+		_putchar(x);
 		x++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
