@@ -5,7 +5,7 @@
  *@c: - is the character to be checked
  */
 
-int _islower(int c)
+int _islower(int x)
 {
 	char x;
 
