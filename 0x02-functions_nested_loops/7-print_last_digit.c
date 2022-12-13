@@ -13,4 +13,5 @@ int print_last_digit(int x)
 	if (y < 0)
 		y *= -1;
 	_putchar(y + '0');
+	return (0);
 }
