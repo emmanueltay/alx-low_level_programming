@@ -10,7 +10,7 @@ void print_times_table(int n)
 
 	int mul;
 
-	int product;
+	int prod;
 
 	if (n > 0 && n < 15)
 	{
@@ -21,22 +21,21 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				product = num * mul;
-				if (product <= 99)
+				prod = num * mul;
+				if (prod <= 99)
 					_putchar(' ');
-				if (product <= 9)
+				if (prod <= 9)
 					_putchar(' ');
-				if (product >= 100)
+				if (prod >= 100)
 				{
-					_putchar((product / 100) + '0');
-					_putchar((product / 10) % 10 + '0');
+					_putchar((prod / 100) + '0');
+					_putchar((prod / 10) % 10 + '0');
 				}
-				else if
-					(product <= 99 && product >= 10);
+				if ((prod <= 99) && (prod >= 10))
 				{
-					_putchar((product / 10) + '0');
+					_putchar((prod / 10) + '0');
 				}
-				_putchar((product % 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}
