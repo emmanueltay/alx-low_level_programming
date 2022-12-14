@@ -9,9 +9,9 @@ int main(void)
 {
 	int i = 0;
 
-	int x = 1;
+	long x = 1;
 
-	int y = 2;
+	long y = 2;
 
 	while (i < 50)
 	{
