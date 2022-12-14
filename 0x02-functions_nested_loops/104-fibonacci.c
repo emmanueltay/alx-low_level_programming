@@ -11,9 +11,9 @@ int main(void)
 {
 	int i;
 
-	long x = 1;
+	unsigned long x = 1;
 
-	long y = 2;
+	unsigned long y = 2;
 
 	for (i = 0; i < 99; i++)
 	{
