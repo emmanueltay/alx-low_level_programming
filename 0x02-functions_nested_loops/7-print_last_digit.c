@@ -2,16 +2,15 @@
 /**
  * print_last_digit - it prints the last digit of an integer
  * @x: The integer entered
- * Return: Always 0 (Success)
+ * Return: value of the last digit
  */
 
 int print_last_digit(int x)
 {
-	int y;
+	int y = x % 10;
 
-	y = x % 10;
 	if (y < 0)
 		y *= -1;
 	_putchar(y + '0');
-	return (0);
+	return (y);
 }
