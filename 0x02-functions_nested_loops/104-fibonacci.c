@@ -11,17 +11,23 @@ int main(void)
 {
 	int i;
 
-	long x = 0;
+	long x = 1;
 
-	long y = 1;
-
-	long sum;
+	long y = 2;
 
 	for (i = 0; i < 99; i++)
-		sum = x + y;
-		x = y;
-		y = sum;
-		printf(", %d", sum);
-	printf('\n');
+	{
+		if (i == 0)
+			printf("%ld", x);
+		else if (i == 1)
+			printf(", %ld", y);
+		else
+		{
+			y += x;
+			x = y - x;
+			printf(", %ld", y);
+		}
+	}
+	printf("\n");
 	return (0);
 }
