@@ -19,6 +19,7 @@ void print_number(int n)
 	{
 		pos = n;
 	}
+	x = pos;
 	count = 1;
 	while (pos > 9)
 	{
