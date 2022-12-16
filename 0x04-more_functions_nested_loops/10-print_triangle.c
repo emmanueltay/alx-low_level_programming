@@ -10,8 +10,6 @@ void print_triangle(int size)
 {
 	int x, y;
 
-	int size = 10;
-
 	for (x = 0; x < size; x++)
 	{
 		for (y = 1; y < (size - x); y++)
