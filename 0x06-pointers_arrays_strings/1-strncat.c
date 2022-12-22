@@ -3,7 +3,7 @@
 /**
  * _strncat - concatenates two strings
  * @dest: destination pointer
- * @src: concantenated pointer
+ * @src: source pointer
  * @n: number of bytes to receive
  * Return: pointer to the resulting string dest
  */
