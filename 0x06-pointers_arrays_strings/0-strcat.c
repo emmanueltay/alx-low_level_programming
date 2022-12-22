@@ -9,13 +9,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int a = 0, i;
+	int x = -1, i;
 
 	for (i = 0; dest[i] != '\0'; i++)
 	do {
+		x++;
 		dest[i] = src[x];
-		a++;
 		i++;
-	} while (src[a] != '\0');
+	} while (src[x] != '\0');
 	return (dest);
 }
