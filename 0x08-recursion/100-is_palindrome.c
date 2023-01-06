@@ -1,17 +1,5 @@
 #include "main.h"
 
-/**
- * is_palindrome - checks if a string is a palindrome
- * @s: the string
- * Return: 1 if it is a palindrome and 0 if not
- */
-
-int is_palindrome(char *s)
-{
-	if (*s == '\0')
-		return (1);
-	return (compare(s, 0, _strlen_recursion(s) - 1));
-}
 
 /**
  * _strlen_recursion - finds the length of a string
@@ -45,4 +33,18 @@ int compare(char *s, int x, int y)
 		return (0 + compare(s, x + 1, y - 1));
 	}
 	return (0);
+}
+
+
+/**
+ * is_palindrome - checks if a string is a palindrome
+ * @s: the string
+ * Return: 1 if it is a palindrome and 0 if not
+ */
+
+int is_palindrome(char *s)
+{
+	if (*s == '\0')
+		return (1);
+	return (compare(s, 0, _strlen_recursion(s) - 1));
 }
