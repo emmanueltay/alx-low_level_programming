@@ -29,7 +29,7 @@ char *mem_fill(char *ptr, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem_space;
+	char *mem_space;
 
 	mem_space = malloc(nmemb * size);
 	if (nmemb == 0 || size == 0)
