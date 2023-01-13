@@ -36,7 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	if (mem_space == NULL)
 		return (NULL);
-	mem_fill(mem_space, 0, nmemb * size)
+	mem_fill(mem_space, 0, nmemb * size);
 		
 		return (mem_space);
 }
