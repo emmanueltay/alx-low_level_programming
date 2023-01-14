@@ -11,7 +11,7 @@
 
 char *mem_fill(char *ptr, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 		ptr[i] = b;
