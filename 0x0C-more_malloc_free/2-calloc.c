@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -31,9 +30,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *mem_space;
 
-	mem_space = malloc(nmemb * size);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+
+	mem_space = malloc(nmemb * size);
+
 	if (mem_space == NULL)
 		return (NULL);
 	mem_fill(mem_space, 0, nmemb * size);
