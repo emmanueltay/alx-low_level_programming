@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list my_parameters;
 	unsigned int i;
-	int sum = 0;
+	unsigned int sum = 0;
 
 	va_start(my_parameters, n);
 
@@ -20,9 +20,8 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	for (i = 0; i < n; i++)
-	{
 		sum += va_arg(my_parameters, int);
-	}
+
 	va_end(my_parameters);
 	return (sum);
 }
